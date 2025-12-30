@@ -1,0 +1,83 @@
+# Unreal Engine 5 .gitignore
+
+# ========================
+# 编译产物 (Build Products)
+# ========================
+Binaries/
+Intermediate/
+DerivedDataCache/
+Build/
+
+# ========================
+# 运行时生成 (Runtime Generated)
+# ========================
+Saved/
+*.log
+
+# ========================
+# IDE 和编辑器 (IDE/Editor)
+# ========================
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.user
+*.vcxproj*
+*.sdf
+*.opensdf
+*.opendb
+*.db
+*.ipch
+
+# ========================
+# 系统文件 (System Files)
+# ========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ========================
+# 临时文件 (Temp Files)
+# ========================
+*.tmp
+*.temp
+*.swp
+*~
+
+# ========================
+# Node.js (如有)
+# ========================
+node_modules/
+package-lock.json
+
+# ========================
+# Python (如有)
+# ========================
+__pycache__/
+*.pyc
+.env
+
+# ========================
+# 不排除的重要文件
+# ========================
+!.gitkeep
+!*.uproject
+!Config/**
+!Content/**
+!Source/**
+!Plugins/**
+!docs/**
+
+# ========================
+# 大型二进制资产 (可选 - 建议用 Git LFS)
+# ========================
+# *.uasset
+# *.umap
+# *.png
+# *.jpg
+# *.wav
+# *.mp3
+
+# Large debug files
+*.pdb
