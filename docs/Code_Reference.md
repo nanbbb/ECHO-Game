@@ -1,7 +1,7 @@
 # 代码参考手册 (Code Reference)
 
-**版本**: v1.0
-**日期**: 2025-12-31
+**版本**: v1.1
+**日期**: 2025-01-01
 **适用**: 程序开发
 
 ---
@@ -11,23 +11,15 @@
 ```
 UObject
 ├── UGameInstanceSubsystem
-│   └── UECHOAudioClockSubsystem        # 音频时钟子系统
-│
-├── USaveGame
-│   └── UECHOSaveGame                   # 存档数据 (计划中)
+│   └── UECHOAudioClockSubsystem        # 音频时钟 + 生命力子系统
 │
 AActor
-├── AGameModeBase
-│   └── AECHOGameMode                   # 游戏模式
-│
 ├── ACharacter
-│   └── AECHOCharacter                  # 玩家角色
+│   └── AECHOCharacter                  # 基础角色
+│       └── AECHOResonanceLung          # 共鸣肺主角 (核心)
 │
 ├── APlayerController
 │   └── AECHOPlayerController           # 玩家控制器
-│
-├── APlayerCameraManager
-│   └── AECHOCameraManager              # 摄像机管理
 │
 └── AActor
     └── AECHORhythmActor                # 节奏响应 Actor
@@ -49,10 +41,11 @@ Quartz 音频时钟子系统，负责音频同步和复苏材质参数更新。
 |------|------|------|------|
 | `PlayMusic` | `USoundBase*, float BPM` | void | 播放音乐并启动 Quartz 时钟 |
 | `StopMusic` | - | void | 停止音乐和时钟 |
-| `GetBeatJudgment` | `float WindowMs, float& OutDiff` | bool | 检查当前时间是否在节拍窗口内 |
+| `GetBeatOffset` | - | float | 获取当前时间距离最近节拍的偏移 |
 | `SetLatencyOffset` | `float LatencyMs` | void | 设置延迟补偿 |
-| `SetRevivalMPC` | `UMaterialParameterCollection*` | void | 设置复苏 MPC 引用 |
-| `UpdateRevivalRadius` | `float Radius, FVector Center` | void | 更新 MPC 参数 |
+| `GetLifeForce` | - | float | 获取当前生命力 (0-1) |
+| `ModifyLifeForce` | `float Delta` | void | 修改生命力 |
+| `TriggerRevivalPulse` | - | void | 触发复苏脉冲 |
 
 #### 事件委托
 

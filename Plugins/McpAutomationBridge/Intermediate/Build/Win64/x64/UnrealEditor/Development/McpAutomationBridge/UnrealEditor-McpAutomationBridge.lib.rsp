@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-McpAutomationBridge.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:/ECHO/ECHO/Intermediate/Build/Win64/x64/ECHOEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"F:/ECHO/ECHO/Plugins/McpAutomationBridge/Intermediate/Build/Win64/x64/UnrealEditor/Development/McpAutomationBridge/Module.McpAutomationBridge.1.cpp.obj"
+"F:/ECHO/ECHO/Plugins/McpAutomationBridge/Intermediate/Build/Win64/x64/UnrealEditor/Development/McpAutomationBridge/Module.McpAutomationBridge.2.cpp.obj"
+"F:/ECHO/ECHO/Plugins/McpAutomationBridge/Intermediate/Build/Win64/x64/UnrealEditor/Development/McpAutomationBridge/Module.McpAutomationBridge.3.cpp.obj"
+"F:/ECHO/ECHO/Plugins/McpAutomationBridge/Intermediate/Build/Win64/x64/UnrealEditor/Development/McpAutomationBridge/Module.McpAutomationBridge.4.cpp.obj"
+"F:/ECHO/ECHO/Plugins/McpAutomationBridge/Intermediate/Build/Win64/x64/UnrealEditor/Development/McpAutomationBridge/Module.McpAutomationBridge.5.cpp.obj"
+"F:/ECHO/ECHO/Plugins/McpAutomationBridge/Intermediate/Build/Win64/x64/UnrealEditor/Development/McpAutomationBridge/Default.rc2.res"
+/OUT:"F:/ECHO/ECHO/Plugins/McpAutomationBridge/Intermediate/Build/Win64/x64/UnrealEditor/Development/McpAutomationBridge/UnrealEditor-McpAutomationBridge.lib"

@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\echo\\echo\\plugins\\mcpautomationbridge\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mcpautomationbridge\\module.mcpautomationbridge.5.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\echo\\echo\\intermediate\\build\\win64\\x64\\echoeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "f:\\echo\\echo\\plugins\\mcpautomationbridge\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mcpautomationbridge\\definitions.mcpautomationbridge.h",
+            "f:\\echo\\echo\\plugins\\mcpautomationbridge\\source\\mcpautomationbridge\\private\\mcpconnectionmanager.cpp",
+            "f:\\echo\\echo\\plugins\\mcpautomationbridge\\source\\mcpautomationbridge\\public\\mcpconnectionmanager.h",
+            "f:\\echo\\echo\\plugins\\mcpautomationbridge\\source\\mcpautomationbridge\\public\\mcpautomationbridgesettings.h",
+            "f:\\echo\\echo\\plugins\\mcpautomationbridge\\intermediate\\build\\win64\\unrealeditor\\inc\\mcpautomationbridge\\uht\\mcpautomationbridgesettings.generated.h",
+            "f:\\echo\\echo\\plugins\\mcpautomationbridge\\source\\mcpautomationbridge\\public\\mcpautomationbridgesubsystem.h",
+            "f:\\echo\\echo\\plugins\\mcpautomationbridge\\intermediate\\build\\win64\\unrealeditor\\inc\\mcpautomationbridge\\uht\\mcpautomationbridgesubsystem.generated.h",
+            "f:\\echo\\echo\\plugins\\mcpautomationbridge\\source\\mcpautomationbridge\\private\\mcpbridgewebsocket.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

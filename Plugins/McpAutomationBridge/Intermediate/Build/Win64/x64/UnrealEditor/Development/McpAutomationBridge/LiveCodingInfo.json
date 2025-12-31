@@ -1,0 +1,60 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.McpAutomationBridge.1.cpp.obj": [
+			"McpAutomationBridge.init.gen.cpp.obj",
+			"McpAutomationBridgeSettings.gen.cpp.obj",
+			"McpAutomationBridgeSubsystem.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"McpAutomationBridgeGlobals.cpp.obj",
+			"McpAutomationBridgeModule.cpp.obj",
+			"McpAutomationBridgeSettings.cpp.obj",
+			"McpAutomationBridgeSubsystem.cpp.obj",
+			"McpAutomationBridge_AnimationHandlers.cpp.obj",
+			"McpAutomationBridge_AssetQueryHandlers.cpp.obj",
+			"McpAutomationBridge_AssetWorkflowHandlers.cpp.obj",
+			"McpAutomationBridge_AudioHandlers.cpp.obj",
+			"McpAutomationBridge_BehaviorTreeHandlers.cpp.obj"
+		],
+		"Module.McpAutomationBridge.2.cpp.obj": [
+			"McpAutomationBridge_BlueprintCreationHandlers.cpp.obj",
+			"McpAutomationBridge_BlueprintGraphHandlers.cpp.obj",
+			"McpAutomationBridge_BlueprintHandlers.cpp.obj",
+			"McpAutomationBridge_BlueprintHandlers_List.cpp.obj",
+			"McpAutomationBridge_ControlHandlers.cpp.obj"
+		],
+		"Module.McpAutomationBridge.3.cpp.obj": [
+			"McpAutomationBridge_DebugHandlers.cpp.obj",
+			"McpAutomationBridge_EditorFunctionHandlers.cpp.obj",
+			"McpAutomationBridge_EffectHandlers.cpp.obj",
+			"McpAutomationBridge_EnvironmentHandlers.cpp.obj",
+			"McpAutomationBridge_FoliageHandlers.cpp.obj",
+			"McpAutomationBridge_InputHandlers.cpp.obj",
+			"McpAutomationBridge_InsightsHandlers.cpp.obj",
+			"McpAutomationBridge_LandscapeHandlers.cpp.obj",
+			"McpAutomationBridge_LevelHandlers.cpp.obj",
+			"McpAutomationBridge_LightingHandlers.cpp.obj",
+			"McpAutomationBridge_LogHandlers.cpp.obj",
+			"McpAutomationBridge_MaterialGraphHandlers.cpp.obj",
+			"McpAutomationBridge_NiagaraGraphHandlers.cpp.obj"
+		],
+		"Module.McpAutomationBridge.4.cpp.obj": [
+			"McpAutomationBridge_NiagaraHandlers.cpp.obj",
+			"McpAutomationBridge_PerformanceHandlers.cpp.obj",
+			"McpAutomationBridge_PipelineHandlers.cpp.obj",
+			"McpAutomationBridge_ProcessRequest.cpp.obj",
+			"McpAutomationBridge_PropertyHandlers.cpp.obj",
+			"McpAutomationBridge_RenderHandlers.cpp.obj",
+			"McpAutomationBridge_SCSHandlers.cpp.obj",
+			"McpAutomationBridge_SequenceHandlers.cpp.obj",
+			"McpAutomationBridge_SequencerHandlers.cpp.obj",
+			"McpAutomationBridge_TestHandlers.cpp.obj",
+			"McpAutomationBridge_UiHandlers.cpp.obj",
+			"McpAutomationBridge_WorldPartitionHandlers.cpp.obj",
+			"McpBridgeWebSocket.cpp.obj"
+		],
+		"Module.McpAutomationBridge.5.cpp.obj": [
+			"McpConnectionManager.cpp.obj"
+		]
+	}
+}

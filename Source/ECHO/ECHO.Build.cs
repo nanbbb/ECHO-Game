@@ -27,20 +27,9 @@ public class ECHO : ModuleRules
 
 		PublicIncludePaths.AddRange(new string[] {
 			"ECHO",
-			"ECHO/Variant_Horror",
-			"ECHO/Variant_Horror/UI",
-			"ECHO/Variant_Shooter",
-			"ECHO/Variant_Shooter/AI",
-			"ECHO/Variant_Shooter/UI",
-			"ECHO/Variant_Shooter/Weapons"
+			"ECHO/Actors",
+			"ECHO/Characters",
+			"ECHO/System"
 		});
-
-		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-
-		// Uncomment if you are using online features
-		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
-
-		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
 	}
 }

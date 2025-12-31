@@ -9,6 +9,7 @@
 #include "ECHOAudioClockSubsystem.generated.h"
 
 class UMaterialParameterCollection;
+class UQuartzClockHandle;
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnQuantizationEvent,
                                             EQuartzCommandQuantization,
@@ -41,9 +42,11 @@ public:
 
   // ========== Judgment ==========
 
-  /** Returns true if the current time is within the judgment window of a beat
-   */
-  UFUNCTION(BlueprintCallable, Category = "ECHO|Input")
+  /** 返回当前时间距离最近节拍的偏移量（秒） */
+  UFUNCTION(BlueprintCallable, Category = "ECHO|Audio")
+  float GetBeatOffset();
+
+  UFUNCTION(BlueprintCallable, Category = "ECHO|Audio")
   bool GetBeatJudgment(float JudgmentWindowMs, float &OutTimeDifference);
 
   // ========== Calibration ==========
@@ -132,12 +135,17 @@ private:
 
   const FName ParamName_Radius = FName("RevivalRadius");
   const FName ParamName_Center = FName("RevivalCenter");
+  const FName ParamName_LifeForce = FName("LifeForce");
 
   // Pulse & Decay
   FTSTicker::FDelegateHandle TickHandle;
   float CurrentRadius = 0.0f;
   float TargetRadius = 0.0f;
   bool Tick(float DeltaTime);
+
+  // Quartz Clock Handle - 必须持久化存储防止 GC
+  UPROPERTY()
+  UQuartzClockHandle *QuartzClockHandle = nullptr;
 
   // Life Force (0-1, 0 = stone, 1 = full life)
   float LifeForce = 1.0f;
